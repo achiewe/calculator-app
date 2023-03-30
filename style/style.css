@@ -1,0 +1,319 @@
+body {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 35px;
+}
+
+.main-container .calculator-output, .header-container .theme-div .change-calc .switch, .header-container .theme-div, .main-container .calculator-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container, .header-container .theme-div .change-calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.main-container .calculator-buttons button, .header-container h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.5333333611px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-buttons button, .header-container h1 {
+    font-size: 40px;
+  }
+}
+
+.header-container .theme-div .change-calc .switch h2, .header-container .theme-div .change-calc h3 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.header-container .theme-div .change-calc .switch .toggle {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 71px;
+  height: 26px;
+  border-radius: 5px;
+  background: #242D44;
+  outline: none;
+  border-radius: 13px;
+}
+
+.header-container .theme-div .change-calc .switch [type=range].toggle::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-left: 3px;
+  background-color: var(--dark-orange);
+  height: 16px;
+  width: 16px;
+}
+
+.header-container .theme-div .change-calc .switch [type=range].toggle::-webkit-slider-thumb:hover {
+  background-color: var(--equal-hover);
+  cursor: pointer;
+}
+
+.main-container .calculator-buttons #del {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.5333333611px;
+  text-align: center;
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-buttons #del {
+    font-size: 28px;
+  }
+}
+
+.main-container .calculator-output {
+  width: 100%;
+  background-color: var(--dark-blue);
+  padding: 29px 24px 22px;
+  border-radius: 10px;
+  height: 88px;
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-output {
+    height: 128px;
+    padding: 40px 32px 36px;
+  }
+}
+
+.main-container .calculator-output .type-output {
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: -0.6666666865px;
+  text-align: right;
+  color: var(--white);
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-output .type-output {
+    font-size: 56px;
+  }
+}
+
+.main-container .calculator-buttons {
+  width: 100%;
+  padding: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 13px;
+  background-color: var(--black-blue);
+  border-radius: 10px;
+  margin-bottom: 31px;
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-buttons {
+    padding: 32px;
+    gap: 23px;
+    margin-bottom: 96px;
+  }
+}
+
+.main-container .calculator-buttons #del, .main-container .calculator-buttons button {
+  height: 64px;
+  width: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--sliver);
+  box-shadow: inset 0px -4px 0px #B3A497;
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-buttons #del, .main-container .calculator-buttons button {
+    height: 64px;
+    width: 101px;
+  }
+}
+
+.main-container .calculator-buttons #reset {
+  height: 64px;
+  width: 133px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--worn-out-blue);
+  box-shadow: inset 0px -4px 0px #414E73;
+  color: var(--white);
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-buttons #reset {
+    height: 64px;
+    width: 227px;
+  }
+}
+
+.main-container .calculator-buttons #reset {
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.5333333611px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-buttons #reset {
+    font-size: 28px;
+  }
+}
+
+.main-container .calculator-buttons #equal {
+  height: 64px;
+  width: 133px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--dark-orange);
+  box-shadow: inset 0px -4px 0px #93261A;
+  color: var(--white);
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-buttons #equal {
+    height: 64px;
+    width: 225px;
+  }
+}
+
+.main-container .calculator-buttons #equal {
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.5333333611px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .main-container .calculator-buttons #equal {
+    font-size: 25.76px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-blue: #3A4663;
+  --background-grey: #E6E6E6;
+  --background-dark-purple: #17062A;
+  --white: #FFFFFF;
+  --black-blue: #242D44;
+  --dark-orange: #D03F2F;
+  --dark-blue: #181F33;
+  --sliver: #EAE3DC;
+  --light-blue: #434A59;
+  --worn-out-blue: #647198;
+  --light-grey: #EEEEEE;
+  --light-black: #36362C;
+  --orange: #C85402;
+  --dark-grey: #D2CDCD;
+  --grey: #E5E4E1;
+  --worn-out-green: #378187;
+  --light-yellow: #FFE53D;
+  --skycolor: #00DED0;
+  --purple: #1E0936;
+  --light-purple: #331C4D;
+  --very-dark-blue: #1A2327;
+  --reset-hover:#A2B2E1;
+  --equal-hover:#F96B5B;
+}
+
+body {
+  width: 100%;
+  background-color: var(--background-blue);
+}
+
+.header-container h1 {
+  color: var(--white);
+}
+.header-container .theme-div {
+  gap: 26px;
+}
+.header-container .theme-div .change-calc {
+  align-items: flex-end;
+  gap: 5px;
+}
+.header-container .theme-div .change-calc h3 {
+  letter-spacing: 8px;
+  color: var(--white);
+}
+.header-container .theme-div .change-calc .switch {
+  width: 100%;
+  gap: 26px;
+}
+.header-container .theme-div .change-calc .switch h2 {
+  color: var(--white);
+  text-align: end;
+}
+.main-container {
+  width: 327px;
+  gap: 24px;
+}
+.main-container .calculator-output {
+  justify-content: flex-end;
+}
+.main-container .calculator-buttons button {
+  color: var(--light-blue);
+}
+.main-container .calculator-buttons #del {
+  background-color: var(--worn-out-blue);
+  box-shadow: inset 0px -4px 0px #414E73;
+  color: var(--white);
+}
+.main-container .calculator-buttons #del:hover {
+  background-color: var(--reset-hover);
+  cursor: pointer;
+}
+.main-container .calculator-buttons #reset {
+  cursor: pointer;
+}
+.main-container .calculator-buttons #reset:hover {
+  background-color: var(--reset-hover);
+}
+.main-container .calculator-buttons #equal:hover {
+  background-color: var(--equal-hover);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-container {
+    margin-top: 98px;
+    width: 540px;
+  }
+  .main-container {
+    width: 540px;
+  }
+  #reset {
+    font-size: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
