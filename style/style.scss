@@ -28,16 +28,32 @@
     --very-dark-blue: #1A2327;
     --reset-hover:#A2B2E1;
     --equal-hover:#F96B5B;
+    --thumb-hover2:#FF8A38;
+    --thumb-hover3:#93FFF8;
+    --worn-out-purple:#56077C;
+    --very-dark-black:#1A2327;
+    --button1-hover-color:#6C34AC;
 }
 
 
 
 
-body {
+.body {
     width: 100%;
     background-color: var(--background-blue);
     @extend %displayFlexBody;
+
 }
+
+.body1{
+    background-color: var(--background-grey);
+}
+
+.body2{
+    background-color: var(--background-dark-purple);
+}
+
+
 
 .header-container {
     @extend %Headerdisplay;
@@ -45,6 +61,14 @@ body {
     h1 {
         @extend %BigFontStyle;
         color: var(--white);
+    }
+
+    .title-1{
+        color:var(--light-black);
+    }
+
+    .title-2{
+        color: var(--light-yellow);
     }
 
     .theme-div {
@@ -62,6 +86,14 @@ body {
                 color: var(--white);
             }
 
+            .title-1{
+                color:var(--light-black);
+            }
+
+            .title-2{
+                color: var(--light-yellow);
+            }
+
             .switch {
                 width: 100%;
                 @extend %displayFlexRow;
@@ -73,9 +105,64 @@ body {
                     text-align: end;
                 }
 
-                .toggle {
+                .title-1{
+                    color:var(--light-black);
+                }
+
+                .title-2{
+                    color: var(--light-yellow);
+                }
+
+                .toggle-switch {
                     @extend %inputVisual;
-                    @extend %thumbVisual;
+                }
+
+                .toggle-switch::-webkit-slider-thumb{
+                    -webkit-appearance: none; 
+                    appearance: none;
+                    border-radius: 20px;
+                    margin-top: 0px; 
+                    margin-left: 3px;
+                    background-color: var(--dark-orange);
+                    height: 16px;
+                    width: 16px;  
+                }
+
+                .toggle-switch::-webkit-slider-thumb:hover{
+                    background-color: var(--equal-hover);
+                    cursor: pointer;
+                }
+
+                .theme-2::-webkit-slider-thumb{
+                    background-color: var(--orange);
+                    cursor: pointer;
+                }
+
+                .theme-3::-webkit-slider-thumb{
+                    background-color: var(--skycolor);
+                    cursor: pointer;
+                }
+
+                .thumb-1::-webkit-slider-thumb:hover{
+                    background-color: var(--equal-hover);
+                    cursor: pointer;
+                }
+
+                .thumb-2::-webkit-slider-thumb:hover{
+                    background-color: var(--thumb-hover2);
+                    cursor: pointer;
+                }
+
+                .thumb-3::-webkit-slider-thumb:hover{
+                    background-color: var(--thumb-hover3);
+                }
+
+               .toggle-1{
+                    background-color: var(--dark-grey);
+                }
+
+                .toggle-2{
+                    background-color: var(--purple);
                 }
             }
         }
@@ -104,7 +191,19 @@ body {
             @extend %buttonsSize;
             @extend %BigFontStyle;
             color: var(--light-blue);
+            cursor: pointer;
         }
+
+        button:hover{
+            background-color: var(--white);
+            cursor: pointer;
+        }
+
+        // .button-1:hover{
+        //     background-color: var(--white) !important;
+        // }
+
+
 
         #del {
             @extend %buttonsSize;

@@ -14,21 +14,21 @@
   <title> Calculator app</title>
 </head>
 
-<body>
+<body class="body">
   <header class="header-container">
-    <h1>
+    <h1 class="calc-title">
       calc
     </h1>
     <div class="theme-div">
       <div class="change-calc">
-        <h3>
+        <h3 id="input-value">
           1 2 3
         </h3>
         <div class="switch" for="toggle">
-          <h2>
+          <h2 id="theme-title">
             THEME
           </h2>
-          <input id="toggle-switch" class="toggle" type="range" min="0" max="2" step="0.9" value="0">
+          <input  class="toggle-switch"  type="range" min="0" max="2" step="0.9"  value="0">
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@
       <button id="equal"> = </button>
     </section>
   </main>
-
+<script src="./script.js"></script>
 </body>
 
 </html>

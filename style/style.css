@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: "League Spartan", sans-serif;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@ body {
   text-align: center;
 }
 
-.header-container .theme-div .change-calc .switch .toggle {
+.header-container .theme-div .change-calc .switch .toggle-switch {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -63,22 +63,6 @@ body {
   background: #242D44;
   outline: none;
   border-radius: 13px;
-}
-
-.header-container .theme-div .change-calc .switch [type=range].toggle::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 20px;
-  margin-top: 0px;
-  margin-left: 3px;
-  background-color: var(--dark-orange);
-  height: 16px;
-  width: 16px;
-}
-
-.header-container .theme-div .change-calc .switch [type=range].toggle::-webkit-slider-thumb:hover {
-  background-color: var(--equal-hover);
-  cursor: pointer;
 }
 
 .main-container .calculator-buttons #del {
@@ -246,15 +230,34 @@ body {
   --very-dark-blue: #1A2327;
   --reset-hover:#A2B2E1;
   --equal-hover:#F96B5B;
+  --thumb-hover2:#FF8A38;
+  --thumb-hover3:#93FFF8;
+  --worn-out-purple:#56077C;
+  --very-dark-black:#1A2327;
+  --button1-hover-color:#6C34AC;
 }
 
-body {
+.body {
   width: 100%;
   background-color: var(--background-blue);
 }
 
+.body1 {
+  background-color: var(--background-grey);
+}
+
+.body2 {
+  background-color: var(--background-dark-purple);
+}
+
 .header-container h1 {
   color: var(--white);
+}
+.header-container .title-1 {
+  color: var(--light-black);
+}
+.header-container .title-2 {
+  color: var(--light-yellow);
 }
 .header-container .theme-div {
   gap: 26px;
@@ -267,6 +270,12 @@ body {
   letter-spacing: 8px;
   color: var(--white);
 }
+.header-container .theme-div .change-calc .title-1 {
+  color: var(--light-black);
+}
+.header-container .theme-div .change-calc .title-2 {
+  color: var(--light-yellow);
+}
 .header-container .theme-div .change-calc .switch {
   width: 100%;
   gap: 26px;
@@ -275,6 +284,52 @@ body {
   color: var(--white);
   text-align: end;
 }
+.header-container .theme-div .change-calc .switch .title-1 {
+  color: var(--light-black);
+}
+.header-container .theme-div .change-calc .switch .title-2 {
+  color: var(--light-yellow);
+}
+.header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-left: 3px;
+  background-color: var(--dark-orange);
+  height: 16px;
+  width: 16px;
+}
+.header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb:hover {
+  background-color: var(--equal-hover);
+  cursor: pointer;
+}
+.header-container .theme-div .change-calc .switch .theme-2::-webkit-slider-thumb {
+  background-color: var(--orange);
+  cursor: pointer;
+}
+.header-container .theme-div .change-calc .switch .theme-3::-webkit-slider-thumb {
+  background-color: var(--skycolor);
+  cursor: pointer;
+}
+.header-container .theme-div .change-calc .switch .thumb-1::-webkit-slider-thumb:hover {
+  background-color: var(--equal-hover);
+  cursor: pointer;
+}
+.header-container .theme-div .change-calc .switch .thumb-2::-webkit-slider-thumb:hover {
+  background-color: var(--thumb-hover2);
+  cursor: pointer;
+}
+.header-container .theme-div .change-calc .switch .thumb-3::-webkit-slider-thumb:hover {
+  background-color: var(--thumb-hover3);
+}
+.header-container .theme-div .change-calc .switch .toggle-1 {
+  background-color: var(--dark-grey);
+}
+.header-container .theme-div .change-calc .switch .toggle-2 {
+  background-color: var(--purple);
+}
+
 .main-container {
   width: 327px;
   gap: 24px;
@@ -284,6 +339,14 @@ body {
 }
 .main-container .calculator-buttons button {
   color: var(--light-blue);
+  cursor: pointer;
+}
+.main-container .calculator-buttons button:hover {
+  background-color: var(--white);
+  cursor: pointer;
+}
+.main-container .calculator-buttons .button-1:hover {
+  background-color: var(--white) !important;
 }
 .main-container .calculator-buttons #del {
   background-color: var(--worn-out-blue);
