@@ -1,4 +1,4 @@
-.body {
+.version3, .version2, .version1 {
   font-family: "League Spartan", sans-serif;
   display: flex;
   flex-direction: column;
@@ -7,21 +7,21 @@
   gap: 35px;
 }
 
-.main-container .calculator-output, .header-container .theme-div .change-calc .switch, .header-container .theme-div, .main-container .calculator-buttons {
+.version3 .main-container .calculator-output, .version3 .header-container .theme-div .change-calc .switch, .version3 .header-container .theme-div, .version2 .main-container .calculator-output, .version2 .header-container .theme-div .change-calc .switch, .version2 .header-container .theme-div, .version1 .main-container .calculator-output, .version1 .header-container .theme-div .change-calc .switch, .version1 .header-container .theme-div, .version3 .main-container .calculator-buttons, .version2 .main-container .calculator-buttons, .version1 .main-container .calculator-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.main-container, .header-container .theme-div .change-calc {
+.version3 .main-container, .version3 .header-container .theme-div .change-calc, .version2 .main-container, .version2 .header-container .theme-div .change-calc, .version1 .main-container, .version1 .header-container .theme-div .change-calc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.header-container {
+.version3 .header-container, .version2 .header-container, .version1 .header-container {
   width: 320px;
   display: flex;
   flex-direction: row;
@@ -30,7 +30,7 @@
   margin-top: 30px;
 }
 
-.main-container .calculator-buttons button, .header-container h1 {
+.version3 .main-container .calculator-buttons button, .version3 .header-container h1, .version2 .main-container .calculator-buttons button, .version2 .header-container h1, .version1 .main-container .calculator-buttons button, .version1 .header-container h1 {
   font-family: "League Spartan", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -39,12 +39,12 @@
   text-align: center;
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-buttons button, .header-container h1 {
+  .version3 .main-container .calculator-buttons button, .version3 .header-container h1, .version2 .main-container .calculator-buttons button, .version2 .header-container h1, .version1 .main-container .calculator-buttons button, .version1 .header-container h1 {
     font-size: 40px;
   }
 }
 
-.header-container .theme-div .change-calc .switch h2, .header-container .theme-div .change-calc h3 {
+.version3 .header-container .theme-div .change-calc .switch h2, .version3 .header-container .theme-div .change-calc h3, .version2 .header-container .theme-div .change-calc .switch h2, .version2 .header-container .theme-div .change-calc h3, .version1 .header-container .theme-div .change-calc .switch h2, .version1 .header-container .theme-div .change-calc h3 {
   font-family: "League Spartan", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -53,19 +53,18 @@
   text-align: center;
 }
 
-.header-container .theme-div .change-calc .switch .toggle-switch {
+.version3 .header-container .theme-div .change-calc .switch .toggle-switch, .version2 .header-container .theme-div .change-calc .switch .toggle-switch, .version1 .header-container .theme-div .change-calc .switch .toggle-switch {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   width: 71px;
   height: 26px;
   border-radius: 5px;
-  background: #242D44;
   outline: none;
   border-radius: 13px;
 }
 
-.main-container .calculator-buttons #del {
+.version3 .main-container .calculator-buttons #del, .version2 .main-container .calculator-buttons #del, .version1 .main-container .calculator-buttons #del {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
   line-height: 29px;
@@ -74,91 +73,83 @@
   font-size: 20px;
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-buttons #del {
+  .version3 .main-container .calculator-buttons #del, .version2 .main-container .calculator-buttons #del, .version1 .main-container .calculator-buttons #del {
     font-size: 28px;
   }
 }
 
-.main-container .calculator-output {
+.version3 .main-container .calculator-output, .version2 .main-container .calculator-output, .version1 .main-container .calculator-output {
   width: 100%;
-  background-color: var(--dark-blue);
   padding: 29px 24px 22px;
   border-radius: 10px;
   height: 88px;
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-output {
+  .version3 .main-container .calculator-output, .version2 .main-container .calculator-output, .version1 .main-container .calculator-output {
     height: 128px;
     padding: 40px 32px 36px;
   }
 }
 
-.main-container .calculator-output .type-output {
+.version3 .main-container .calculator-output .type-output, .version2 .main-container .calculator-output .type-output, .version1 .main-container .calculator-output .type-output {
   font-family: "League Spartan", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 37px;
   letter-spacing: -0.6666666865px;
   text-align: right;
-  color: var(--white);
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-output .type-output {
+  .version3 .main-container .calculator-output .type-output, .version2 .main-container .calculator-output .type-output, .version1 .main-container .calculator-output .type-output {
     font-size: 56px;
   }
 }
 
-.main-container .calculator-buttons {
+.version3 .main-container .calculator-buttons, .version2 .main-container .calculator-buttons, .version1 .main-container .calculator-buttons {
   width: 100%;
   padding: 24px;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 13px;
-  background-color: var(--black-blue);
   border-radius: 10px;
   margin-bottom: 31px;
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-buttons {
+  .version3 .main-container .calculator-buttons, .version2 .main-container .calculator-buttons, .version1 .main-container .calculator-buttons {
     padding: 32px;
     gap: 23px;
     margin-bottom: 96px;
   }
 }
 
-.main-container .calculator-buttons #del, .main-container .calculator-buttons button {
+.version3 .main-container .calculator-buttons #del, .version3 .main-container .calculator-buttons button, .version2 .main-container .calculator-buttons #del, .version2 .main-container .calculator-buttons button, .version1 .main-container .calculator-buttons #del, .version1 .main-container .calculator-buttons button {
   height: 64px;
   width: 60px;
   border-radius: 5px;
   border: none;
-  background-color: var(--sliver);
-  box-shadow: inset 0px -4px 0px #B3A497;
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-buttons #del, .main-container .calculator-buttons button {
+  .version3 .main-container .calculator-buttons #del, .version3 .main-container .calculator-buttons button, .version2 .main-container .calculator-buttons #del, .version2 .main-container .calculator-buttons button, .version1 .main-container .calculator-buttons #del, .version1 .main-container .calculator-buttons button {
     height: 64px;
     width: 101px;
   }
 }
 
-.main-container .calculator-buttons #reset {
+.version3 .main-container .calculator-buttons #reset, .version2 .main-container .calculator-buttons #reset, .version1 .main-container .calculator-buttons #reset {
   height: 64px;
   width: 133px;
   border-radius: 5px;
   border: none;
-  background-color: var(--worn-out-blue);
-  box-shadow: inset 0px -4px 0px #414E73;
-  color: var(--white);
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-buttons #reset {
+  .version3 .main-container .calculator-buttons #reset, .version2 .main-container .calculator-buttons #reset, .version1 .main-container .calculator-buttons #reset {
     height: 64px;
     width: 227px;
   }
 }
 
-.main-container .calculator-buttons #reset {
+.version3 .main-container .calculator-buttons #reset, .version2 .main-container .calculator-buttons #reset, .version1 .main-container .calculator-buttons #reset {
   font-family: "League Spartan", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -167,28 +158,25 @@
   text-align: center;
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-buttons #reset {
+  .version3 .main-container .calculator-buttons #reset, .version2 .main-container .calculator-buttons #reset, .version1 .main-container .calculator-buttons #reset {
     font-size: 28px;
   }
 }
 
-.main-container .calculator-buttons #equal {
+.version3 .main-container .calculator-buttons #equal, .version2 .main-container .calculator-buttons #equal, .version1 .main-container .calculator-buttons #equal {
   height: 64px;
   width: 133px;
   border-radius: 5px;
   border: none;
-  background-color: var(--dark-orange);
-  box-shadow: inset 0px -4px 0px #93261A;
-  color: var(--white);
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-buttons #equal {
+  .version3 .main-container .calculator-buttons #equal, .version2 .main-container .calculator-buttons #equal, .version1 .main-container .calculator-buttons #equal {
     height: 64px;
     width: 225px;
   }
 }
 
-.main-container .calculator-buttons #equal {
+.version3 .main-container .calculator-buttons #equal, .version2 .main-container .calculator-buttons #equal, .version1 .main-container .calculator-buttons #equal {
   font-family: "League Spartan", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -197,7 +185,7 @@
   text-align: center;
 }
 @media (min-width: 1024px) {
-  .main-container .calculator-buttons #equal {
+  .version3 .main-container .calculator-buttons #equal, .version2 .main-container .calculator-buttons #equal, .version1 .main-container .calculator-buttons #equal {
     font-size: 25.76px;
   }
 }
@@ -237,146 +225,320 @@
   --button1-hover-color:#6C34AC;
 }
 
-.body {
+.version1 {
   width: 100%;
-  background-color: var(--background-blue);
+  background-color: #3A4663;
 }
-
-.body1 {
-  background-color: var(--background-grey);
+.version1 .header-container h1 {
+  color: #FFFFFF;
 }
-
-.body2 {
-  background-color: var(--background-dark-purple);
-}
-
-.header-container h1 {
-  color: var(--white);
-}
-.header-container .title-1 {
-  color: var(--light-black);
-}
-.header-container .title-2 {
-  color: var(--light-yellow);
-}
-.header-container .theme-div {
+.version1 .header-container .theme-div {
   gap: 26px;
 }
-.header-container .theme-div .change-calc {
+.version1 .header-container .theme-div .change-calc {
   align-items: flex-end;
   gap: 5px;
 }
-.header-container .theme-div .change-calc h3 {
+.version1 .header-container .theme-div .change-calc h3 {
   letter-spacing: 8px;
-  color: var(--white);
+  color: #FFFFFF;
 }
-.header-container .theme-div .change-calc .title-1 {
-  color: var(--light-black);
-}
-.header-container .theme-div .change-calc .title-2 {
-  color: var(--light-yellow);
-}
-.header-container .theme-div .change-calc .switch {
+.version1 .header-container .theme-div .change-calc .switch {
   width: 100%;
   gap: 26px;
 }
-.header-container .theme-div .change-calc .switch h2 {
-  color: var(--white);
+.version1 .header-container .theme-div .change-calc .switch h2 {
+  color: #FFFFFF;
   text-align: end;
 }
-.header-container .theme-div .change-calc .switch .title-1 {
-  color: var(--light-black);
+.version1 .header-container .theme-div .change-calc .switch .toggle-switch {
+  background: #242D44;
 }
-.header-container .theme-div .change-calc .switch .title-2 {
-  color: var(--light-yellow);
-}
-.header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb {
+.version1 .header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   border-radius: 20px;
   margin-top: 0px;
   margin-left: 3px;
-  background-color: var(--dark-orange);
+  background-color: #D03F2F;
   height: 16px;
   width: 16px;
 }
-.header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb:hover {
-  background-color: var(--equal-hover);
+.version1 .header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb:hover {
+  background-color: #F96B5B;
   cursor: pointer;
 }
-.header-container .theme-div .change-calc .switch .theme-2::-webkit-slider-thumb {
-  background-color: var(--orange);
-  cursor: pointer;
-}
-.header-container .theme-div .change-calc .switch .theme-3::-webkit-slider-thumb {
-  background-color: var(--skycolor);
-  cursor: pointer;
-}
-.header-container .theme-div .change-calc .switch .thumb-1::-webkit-slider-thumb:hover {
-  background-color: var(--equal-hover);
-  cursor: pointer;
-}
-.header-container .theme-div .change-calc .switch .thumb-2::-webkit-slider-thumb:hover {
-  background-color: var(--thumb-hover2);
-  cursor: pointer;
-}
-.header-container .theme-div .change-calc .switch .thumb-3::-webkit-slider-thumb:hover {
-  background-color: var(--thumb-hover3);
-}
-.header-container .theme-div .change-calc .switch .toggle-1 {
-  background-color: var(--dark-grey);
-}
-.header-container .theme-div .change-calc .switch .toggle-2 {
-  background-color: var(--purple);
-}
-
-.main-container {
+.version1 .main-container {
   width: 327px;
   gap: 24px;
 }
-.main-container .calculator-output {
+.version1 .main-container .calculator-output {
   justify-content: flex-end;
+  background-color: #181F33;
 }
-.main-container .calculator-buttons button {
-  color: var(--light-blue);
+.version1 .main-container .calculator-output .type-output {
+  color: #FFFFFF;
+}
+.version1 .main-container .calculator-buttons {
+  background-color: #242D44;
+}
+.version1 .main-container .calculator-buttons button {
+  background-color: #EAE3DC;
+  box-shadow: inset 0px -4px 0px #B3A497;
+  color: #434A59;
   cursor: pointer;
 }
-.main-container .calculator-buttons button:hover {
-  background-color: var(--white);
+.version1 .main-container .calculator-buttons button:hover {
+  background-color: #FFFFFE;
   cursor: pointer;
 }
-.main-container .calculator-buttons .button-1:hover {
-  background-color: var(--white) !important;
-}
-.main-container .calculator-buttons #del {
-  background-color: var(--worn-out-blue);
+.version1 .main-container .calculator-buttons #del {
+  background-color: #647198;
   box-shadow: inset 0px -4px 0px #414E73;
-  color: var(--white);
+  color: #FFFFFF;
 }
-.main-container .calculator-buttons #del:hover {
-  background-color: var(--reset-hover);
+.version1 .main-container .calculator-buttons #del:hover {
+  background-color: #A2B2E1;
   cursor: pointer;
 }
-.main-container .calculator-buttons #reset {
+.version1 .main-container .calculator-buttons #reset {
+  background-color: #647198;
+  box-shadow: inset 0px -4px 0px #414E73;
+  color: #FFFFFF;
   cursor: pointer;
 }
-.main-container .calculator-buttons #reset:hover {
-  background-color: var(--reset-hover);
+.version1 .main-container .calculator-buttons #reset:hover {
+  background-color: #A2B2E1;
 }
-.main-container .calculator-buttons #equal:hover {
-  background-color: var(--equal-hover);
+.version1 .main-container .calculator-buttons #equal {
+  background-color: #D03F2F;
+  box-shadow: inset 0px -4px 0px #93261A;
+  color: #FFFFFF;
+}
+.version1 .main-container .calculator-buttons #equal:hover {
+  background-color: #F96B5B;
+  cursor: pointer;
+}
+
+.version2 {
+  width: 100%;
+  background-color: #E6E6E6;
+}
+.version2 .header-container h1 {
+  color: #36362C;
+}
+.version2 .header-container .theme-div {
+  gap: 26px;
+}
+.version2 .header-container .theme-div .change-calc {
+  align-items: flex-end;
+  gap: 5px;
+}
+.version2 .header-container .theme-div .change-calc h3 {
+  letter-spacing: 8px;
+  color: #36362C;
+}
+.version2 .header-container .theme-div .change-calc .switch {
+  width: 100%;
+  gap: 26px;
+}
+.version2 .header-container .theme-div .change-calc .switch h2 {
+  color: #36362C;
+  text-align: end;
+}
+.version2 .header-container .theme-div .change-calc .switch .toggle-switch {
+  background: #D2CDCD;
+}
+.version2 .header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-left: 3px;
+  background-color: #C85402;
+  height: 16px;
+  width: 16px;
+}
+.version2 .header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb:hover {
+  background-color: #FF8A38;
+  cursor: pointer;
+}
+.version2 .main-container {
+  width: 327px;
+  gap: 24px;
+}
+.version2 .main-container .calculator-output {
+  justify-content: flex-end;
+  background-color: #EEEEEE;
+}
+.version2 .main-container .calculator-output .type-output {
+  color: #36362C;
+}
+.version2 .main-container .calculator-buttons {
+  background-color: #D2CDCD;
+}
+.version2 .main-container .calculator-buttons button {
+  background-color: #E5E4E1;
+  box-shadow: inset 0px -4px 0px #A79E91;
+  color: #36362C;
+  cursor: pointer;
+}
+.version2 .main-container .calculator-buttons button:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.version2 .main-container .calculator-buttons #del {
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #1B6066;
+  color: #FFFFFF;
+}
+.version2 .main-container .calculator-buttons #del:hover {
+  background-color: #62B5BC;
+  cursor: pointer;
+}
+.version2 .main-container .calculator-buttons #reset {
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #1B6066;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.version2 .main-container .calculator-buttons #reset:hover {
+  background-color: #62B5BC;
+}
+.version2 .main-container .calculator-buttons #equal {
+  background-color: #C85402;
+  box-shadow: inset 0px -4px 0px #873901;
+  color: #FFFFFF;
+}
+.version2 .main-container .calculator-buttons #equal:hover {
+  background-color: #FF8A38;
+  cursor: pointer;
+}
+
+.version3 {
+  width: 100%;
+  background-color: #17062A;
+}
+.version3 .header-container h1 {
+  color: #FFE53D;
+}
+.version3 .header-container .theme-div {
+  gap: 26px;
+}
+.version3 .header-container .theme-div .change-calc {
+  align-items: flex-end;
+  gap: 5px;
+}
+.version3 .header-container .theme-div .change-calc h3 {
+  letter-spacing: 8px;
+  color: #FFE53D;
+}
+.version3 .header-container .theme-div .change-calc .switch {
+  width: 100%;
+  gap: 26px;
+}
+.version3 .header-container .theme-div .change-calc .switch h2 {
+  color: #FFE53D;
+  text-align: end;
+}
+.version3 .header-container .theme-div .change-calc .switch .toggle-switch {
+  background: #1E0936;
+}
+.version3 .header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-left: 3px;
+  background-color: #00DED0;
+  height: 16px;
+  width: 16px;
+}
+.version3 .header-container .theme-div .change-calc .switch .toggle-switch::-webkit-slider-thumb:hover {
+  background-color: #93FFF8;
+  cursor: pointer;
+}
+.version3 .main-container {
+  width: 327px;
+  gap: 24px;
+}
+.version3 .main-container .calculator-output {
+  justify-content: flex-end;
+  background-color: #1E0936;
+}
+.version3 .main-container .calculator-output .type-output {
+  color: #FFE53D;
+}
+.version3 .main-container .calculator-buttons {
+  background-color: #1E0936;
+}
+.version3 .main-container .calculator-buttons button {
+  background-color: #331C4D;
+  box-shadow: inset 0px -4px 0px #881C9E;
+  color: #FFE53D;
+  cursor: pointer;
+}
+.version3 .main-container .calculator-buttons button:hover {
+  background-color: #6C34AC;
+  cursor: pointer;
+}
+.version3 .main-container .calculator-buttons #del {
+  background-color: #56077C;
+  box-shadow: inset 0px -4px 0px #BE15F4;
+  color: #FFFFFF;
+}
+.version3 .main-container .calculator-buttons #del:hover {
+  background-color: #8631AF;
+  cursor: pointer;
+}
+.version3 .main-container .calculator-buttons #reset {
+  background-color: #56077C;
+  box-shadow: inset 0px -4px 0px #BE15F4;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.version3 .main-container .calculator-buttons #reset:hover {
+  background-color: #8631AF;
+}
+.version3 .main-container .calculator-buttons #equal {
+  background-color: #00DED0;
+  box-shadow: inset 0px -4px 0px #6CF9F1;
+  color: #1A2327;
+}
+.version3 .main-container .calculator-buttons #equal:hover {
+  background-color: #93FFF8;
   cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
-  .header-container {
+  .version1 .header-container {
     margin-top: 98px;
     width: 540px;
   }
-  .main-container {
+  .version1 .main-container {
     width: 540px;
   }
-  #reset {
+  .version1 #reset {
+    font-size: 50px;
+  }
+  .version2 .header-container {
+    margin-top: 98px;
+    width: 540px;
+  }
+  .version2 .main-container {
+    width: 540px;
+  }
+  .version2 #reset {
+    font-size: 50px;
+  }
+  .version3 .header-container {
+    margin-top: 98px;
+    width: 540px;
+  }
+  .version3 .main-container {
+    width: 540px;
+  }
+  .version3 #reset {
     font-size: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

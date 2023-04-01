@@ -38,37 +38,18 @@
 
 
 
-.body {
+.version1{
     width: 100%;
-    background-color: var(--background-blue);
+    background-color: map-get($version1 , $key:background-color);
     @extend %displayFlexBody;
 
-}
-
-.body1{
-    background-color: var(--background-grey);
-}
-
-.body2{
-    background-color: var(--background-dark-purple);
-}
-
-
-
+    
 .header-container {
     @extend %Headerdisplay;
 
     h1 {
         @extend %BigFontStyle;
-        color: var(--white);
-    }
-
-    .title-1{
-        color:var(--light-black);
-    }
-
-    .title-2{
-        color: var(--light-yellow);
+        color:map-get($version1 , $key:text-contentColor);
     }
 
     .theme-div {
@@ -83,15 +64,7 @@
             h3 {
                 @extend %SmallFontStyle;
                 letter-spacing: 8px;
-                color: var(--white);
-            }
-
-            .title-1{
-                color:var(--light-black);
-            }
-
-            .title-2{
-                color: var(--light-yellow);
+                color:map-get($version1 , $key:text-contentColor);
             }
 
             .switch {
@@ -101,20 +74,13 @@
 
                 h2 {
                     @extend %SmallFontStyle;
-                    color: var(--white);
+                    color:map-get($version1 , $key:text-contentColor);
                     text-align: end;
-                }
-
-                .title-1{
-                    color:var(--light-black);
-                }
-
-                .title-2{
-                    color: var(--light-yellow);
                 }
 
                 .toggle-switch {
                     @extend %inputVisual;
+                    background:map-get($version1 , $key:input-color);
                 }
 
                 .toggle-switch::-webkit-slider-thumb{
@@ -123,46 +89,14 @@
                     border-radius: 20px;
                     margin-top: 0px; 
                     margin-left: 3px;
-                    background-color: var(--dark-orange);
+                    background-color:map-get($version1 , $key:thumb-color);
                     height: 16px;
                     width: 16px;  
                 }
 
                 .toggle-switch::-webkit-slider-thumb:hover{
-                    background-color: var(--equal-hover);
+                    background-color:map-get($version1 , $key:thumb-colorHover);
                     cursor: pointer;
-                }
-
-                .theme-2::-webkit-slider-thumb{
-                    background-color: var(--orange);
-                    cursor: pointer;
-                }
-
-                .theme-3::-webkit-slider-thumb{
-                    background-color: var(--skycolor);
-                    cursor: pointer;
-                }
-
-                .thumb-1::-webkit-slider-thumb:hover{
-                    background-color: var(--equal-hover);
-                    cursor: pointer;
-                }
-
-                .thumb-2::-webkit-slider-thumb:hover{
-                    background-color: var(--thumb-hover2);
-                    cursor: pointer;
-                }
-
-                .thumb-3::-webkit-slider-thumb:hover{
-                    background-color: var(--thumb-hover3);
-                }
-
-               .toggle-1{
-                    background-color: var(--dark-grey);
-                }
-
-                .toggle-2{
-                    background-color: var(--purple);
                 }
             }
         }
@@ -178,24 +112,28 @@
         @extend %displayFlexRow;
         justify-content: flex-end;
         @extend %typeCount;
-
+        background-color:map-get($version1 , $key:content-output);
         .type-output {
             @extend %outputFont;
+            color: map-get($version1 , $key:text-contentColor);
         }
     }
 
     .calculator-buttons {
         @extend %calculateContainer;
+        background-color:map-get($version1 , $key:buttonsDivColor);
 
         button {
             @extend %buttonsSize;
+            background-color: map-get($version1 , $key:buttonColors);
+            box-shadow: inset 0px -4px 0px  map-get($version1 , $key:boxshadowColor);
             @extend %BigFontStyle;
-            color: var(--light-blue);
+            color: map-get($version1 , $key:buttonsTextColor);
             cursor: pointer;
         }
 
         button:hover{
-            background-color: var(--white);
+            background-color: map-get($version1 , $key:buttonsBoxHover);
             cursor: pointer;
         }
 
@@ -208,38 +146,358 @@
         #del {
             @extend %buttonsSize;
             @extend %delFont;
-            background-color: var(--worn-out-blue);
-            box-shadow: inset 0px -4px 0px #414E73;
-            color: var(--white);
+            background-color:map-get($version1 , $key:DelDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version1 , $key:boxshadowDelReset);
+            color:map-get($version1 , $key:DelDivTextColor);
 
             &:hover{
-                background-color: var(--reset-hover);
+                background-color:map-get($version1 , $key:DelResetDivHover);
                 cursor:pointer;
             }
         }
 
         #reset {
             @extend %resetDiv;
+            background-color: map-get($version1 , $key:ResetDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version1 , $key:boxshadowDelReset);
+            color:map-get($version1 , $key:ResetDivTextColor);
             @extend %resetFont;
             cursor: pointer;
 
             &:hover{
-                background-color:var(--reset-hover);
+                background-color:map-get($version1 , $key:DelResetDivHover);
             }
 
         }
 
         #equal {
             @extend %equalDiv;
+            background-color: map-get($version1 , $key:equalDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version1 , $key:boxShadowColorEqual);
+            color:map-get($version1 , $key: equalDivTextColor);
             @extend %equalFont;
 
             &:hover{
-                background-color: var(--equal-hover);
+                background-color:map-get($version1 , $key:equalDivHover);
                 cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+.version2{
+    width: 100%;
+    background-color: map-get($version2 , $key:background-color);
+    @extend %displayFlexBody;
+
+    
+.header-container {
+    @extend %Headerdisplay;
+
+    h1 {
+        @extend %BigFontStyle;
+        color:map-get($version2 , $key:text-contentColor);
+    }
+
+    .theme-div {
+        @extend %displayFlexRow;
+        gap: 26px;
+
+        .change-calc {
+            @extend %displayFlexcolumn;
+            align-items: flex-end;
+            gap: 5px;
+
+            h3 {
+                @extend %SmallFontStyle;
+                letter-spacing: 8px;
+                color:map-get($version2 , $key:text-contentColor);
+            }
+
+            .switch {
+                width: 100%;
+                @extend %displayFlexRow;
+                gap: 26px;
+
+                h2 {
+                    @extend %SmallFontStyle;
+                    color:map-get($version2 , $key:text-contentColor);
+                    text-align: end;
+                }
+
+                .toggle-switch {
+                    @extend %inputVisual;
+                    background:map-get($version2 , $key:input-color);
+                }
+
+                .toggle-switch::-webkit-slider-thumb{
+                    -webkit-appearance: none; 
+                    appearance: none;
+                    border-radius: 20px;
+                    margin-top: 0px; 
+                    margin-left: 3px;
+                    background-color:map-get($version2 , $key:thumb-color);
+                    height: 16px;
+                    width: 16px;  
+                }
+
+                .toggle-switch::-webkit-slider-thumb:hover{
+                    background-color:map-get($version2 , $key:thumb-colorHover);
+                    cursor: pointer;
+                }
             }
         }
     }
 }
+
+.main-container {
+    @extend %displayFlexcolumn;
+    width: 327px;
+    gap: 24px;
+
+    .calculator-output {
+        @extend %displayFlexRow;
+        justify-content: flex-end;
+        @extend %typeCount;
+        background-color:map-get($version2 , $key:content-output);
+        .type-output {
+            @extend %outputFont;
+            color: map-get($version2 , $key:text-contentColor);
+        }
+    }
+
+    .calculator-buttons {
+        @extend %calculateContainer;
+        background-color:map-get($version2 , $key:buttonsDivColor);
+
+        button {
+            @extend %buttonsSize;
+            background-color: map-get($version2 , $key:buttonColors);
+            box-shadow: inset 0px -4px 0px  map-get($version2 , $key:boxshadowColor);
+            @extend %BigFontStyle;
+            color: map-get($version2 , $key:buttonsTextColor);
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: map-get($version2, $key:buttonsBoxHover);
+            cursor: pointer;
+        }
+
+        // .button-1:hover{
+        //     background-color: var(--white) !important;
+        // }
+
+
+
+        #del {
+            @extend %buttonsSize;
+            @extend %delFont;
+            background-color:map-get($version2 , $key:DelDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version2 , $key:boxshadowDelReset);
+            color:map-get($version2 , $key:DelDivTextColor);
+
+            &:hover{
+                background-color:map-get($version2 , $key:DelResetDivHover);
+                cursor:pointer;
+            }
+        }
+
+        #reset {
+            @extend %resetDiv;
+            background-color: map-get($version2 , $key:ResetDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version2 , $key:boxshadowDelReset);
+            color:map-get($version2 , $key:ResetDivTextColor);
+            @extend %resetFont;
+            cursor: pointer;
+
+            &:hover{
+                background-color:map-get($version2 , $key:DelResetDivHover);
+            }
+
+        }
+
+        #equal {
+            @extend %equalDiv;
+            background-color: map-get($version2 , $key:equalDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version2, $key:boxShadowColorEqual);
+            color:map-get($version2 , $key: equalDivTextColor);
+            @extend %equalFont;
+
+            &:hover{
+                background-color:map-get($version2 , $key:equalDivHover);
+                cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.version3{
+    width: 100%;
+    background-color: map-get($version3 , $key:background-color);
+    @extend %displayFlexBody;
+
+    
+.header-container {
+    @extend %Headerdisplay;
+
+    h1 {
+        @extend %BigFontStyle;
+        color:map-get($version3 , $key:text-contentColor);
+    }
+
+    .theme-div {
+        @extend %displayFlexRow;
+        gap: 26px;
+
+        .change-calc {
+            @extend %displayFlexcolumn;
+            align-items: flex-end;
+            gap: 5px;
+
+            h3 {
+                @extend %SmallFontStyle;
+                letter-spacing: 8px;
+                color:map-get($version3 , $key:text-contentColor);
+            }
+
+            .switch {
+                width: 100%;
+                @extend %displayFlexRow;
+                gap: 26px;
+
+                h2 {
+                    @extend %SmallFontStyle;
+                    color:map-get($version3, $key:text-contentColor);
+                    text-align: end;
+                }
+
+                .toggle-switch {
+                    @extend %inputVisual;
+                    background:map-get($version3 , $key:input-color);
+                }
+
+                .toggle-switch::-webkit-slider-thumb{
+                    -webkit-appearance: none; 
+                    appearance: none;
+                    border-radius: 20px;
+                    margin-top: 0px; 
+                    margin-left: 3px;
+                    background-color:map-get($version3 , $key:thumb-color);
+                    height: 16px;
+                    width: 16px;  
+                }
+
+                .toggle-switch::-webkit-slider-thumb:hover{
+                    background-color:map-get($version3, $key:thumb-colorHover);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.main-container {
+    @extend %displayFlexcolumn;
+    width: 327px;
+    gap: 24px;
+
+    .calculator-output {
+        @extend %displayFlexRow;
+        justify-content: flex-end;
+        @extend %typeCount;
+        background-color:map-get($version3 , $key:content-output);
+        .type-output {
+            @extend %outputFont;
+            color: map-get($version3 , $key:text-contentColor);
+        }
+    }
+
+    .calculator-buttons {
+        @extend %calculateContainer;
+        background-color:map-get($version3 , $key:buttonsDivColor);
+
+        button {
+            @extend %buttonsSize;
+            background-color: map-get($version3 , $key:buttonColors);
+            box-shadow: inset 0px -4px 0px  map-get($version3 , $key:boxshadowColor);
+            @extend %BigFontStyle;
+            color: map-get($version3 , $key:buttonsTextColor);
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: map-get($version3, $key:buttonsBoxHover);
+            cursor: pointer;
+        }
+
+        // .button-1:hover{
+        //     background-color: var(--white) !important;
+        // }
+
+
+
+        #del {
+            @extend %buttonsSize;
+            @extend %delFont;
+            background-color:map-get($version3 , $key:DelDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version3 , $key:boxshadowDelReset);
+            color:map-get($version3 , $key:DelDivTextColor);
+
+            &:hover{
+                background-color:map-get($version3 , $key:DelResetDivHover);
+                cursor:pointer;
+            }
+        }
+
+        #reset {
+            @extend %resetDiv;
+            background-color: map-get($version3 , $key:ResetDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version3 , $key:boxshadowDelReset);
+            color:map-get($version3 , $key:ResetDivTextColor);
+            @extend %resetFont;
+            cursor: pointer;
+
+            &:hover{
+                background-color:map-get($version3 , $key:DelResetDivHover);
+            }
+
+        }
+
+        #equal {
+            @extend %equalDiv;
+            background-color: map-get($version3 , $key:equalDivColor);
+            box-shadow: inset 0px -4px 0px map-get($version3, $key:boxShadowColorEqual);
+            color:map-get($version3 , $key: equalDivTextColor);
+            @extend %equalFont;
+
+            &:hover{
+                background-color:map-get($version3 , $key:equalDivHover);
+                cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+
 
 
 
@@ -265,6 +523,7 @@
 
 @media screen and (min-width: $screen-size) {
     @if $screen-size >=1024px {
+        .version1{
         .header-container {
             margin-top: 98px;
             width: 540px;
@@ -278,4 +537,36 @@
             font-size:50px;
         }
     }
+
+
+    .version2{
+        .header-container {
+            margin-top: 98px;
+            width: 540px;
+        }
+
+        .main-container {
+            width: 540px;
+        } 
+
+        #reset{
+            font-size:50px;
+        }
+    }
+
+    .version3{
+        .header-container {
+            margin-top: 98px;
+            width: 540px;
+        }
+
+        .main-container {
+            width: 540px;
+        } 
+
+        #reset{
+            font-size:50px;
+        }
+    }
+}
 }

@@ -1,11 +1,78 @@
 $screen-size:1024px;
 
 
-// $background1:(
-//     background-blue1: #3A4663.
-//     white:#FFFFFF;
-// )
+$version1:(
+    background-color: #3A4663,
+    text-contentColor:#FFFFFF,
+    thumb-color:#D03F2F,
+    thumb-colorHover:#F96B5B,
+    input-color:#242D44,
+    content-output:#181F33,
+    buttonsDivColor:#242D44,
+    buttonColors:#EAE3DC,
+    boxshadowColor:#B3A497,
+    buttonsTextColor:#434A59,
+    buttonsBoxHover:#FFFFFE,
+    DelDivColor:#647198,
+    DelResetDivHover:#A2B2E1,
+    boxshadowDelReset:#414E73,
+    DelDivTextColor:#FFFFFF,
+    ResetDivColor:#647198,
+    ResetDivTextColor:#FFFFFF,
+    equalDivTextColor:#FFFFFF,
+    equalDivColor:#D03F2F,
+    equalDivHover:#F96B5B,
+    boxShadowColorEqual:#93261A
+);
 
+$version2:(
+    background-color: #E6E6E6,
+    text-contentColor:#36362C,
+    thumb-color:#C85402,
+    thumb-colorHover:#FF8A38,
+    input-color:#D2CDCD,
+    content-output:#EEEEEE,
+    buttonsDivColor:#D2CDCD,
+    buttonColors:#E5E4E1,
+    boxshadowColor:#A79E91,
+    buttonsTextColor:#36362C,
+    buttonsBoxHover:#FFFFFF,
+    DelDivColor:#378187,
+    DelResetDivHover:#62B5BC,
+    boxshadowDelReset:#1B6066,
+    DelDivTextColor:#FFFFFF,
+    ResetDivColor: #378187,
+    ResetDivTextColor:#FFFFFF,
+    equalDivTextColor:#FFFFFF,
+    equalDivColor:#C85402,
+    equalDivHover:#FF8A38,
+    boxShadowColorEqual:#873901
+);
+
+
+$version3:(
+    background-color: #17062A,
+    text-contentColor:#FFE53D,
+    thumb-color:#00DED0,
+    thumb-colorHover:#93FFF8,
+    input-color:#1E0936,
+    content-output:#1E0936,
+    buttonsDivColor:#1E0936,
+    buttonColors:#331C4D,
+    boxshadowColor:#881C9E,
+    buttonsTextColor:#FFE53D,
+    buttonsBoxHover:#6C34AC,
+    DelDivColor:#56077C,
+    DelResetDivHover:#8631AF,
+    boxshadowDelReset:#BE15F4,
+    DelDivTextColor:#FFFFFF,
+    ResetDivColor: #56077C,
+    ResetDivTextColor:#FFFFFF,
+    equalDivTextColor:#1A2327,
+    equalDivColor:#00DED0,
+    equalDivHover:#93FFF8,
+    boxShadowColorEqual:#6CF9F1
+);
 
 %displayFlexBody {
     font-family: 'League Spartan', sans-serif;
@@ -68,7 +135,6 @@ $screen-size:1024px;
     width: 71px;
     height: 26px;
     border-radius: 5px;
-    background:#242D44;
     outline: none;
     border-radius: 13px;
 }
@@ -88,7 +154,6 @@ $screen-size:1024px;
 
 %typeCount{
     width:100%;
-    background-color: var(--dark-blue);
     padding: 29px 24px 22px;
     border-radius: 10px;
     height:88px;
@@ -107,7 +172,6 @@ $screen-size:1024px;
     line-height: 37px;
     letter-spacing: -0.6666666865348816px;
     text-align: right;
-    color: var(--white);
 
     @media (min-width: 1024px) {
        font-size:56px;
@@ -122,7 +186,6 @@ $screen-size:1024px;
     align-items: flex-start;
     flex-wrap: wrap;
     gap:13px;
-    background-color: var(--black-blue);
     border-radius: 10px;
     margin-bottom: 31px;
 
@@ -138,8 +201,6 @@ $screen-size:1024px;
     width: 60px;
     border-radius: 5px;
     border: none;
-    background-color: var(--sliver);
-    box-shadow: inset 0px -4px 0px #B3A497;
 
     @media (min-width: 1024px) {
         height: 64px;
@@ -153,9 +214,6 @@ $screen-size:1024px;
     width: 133px;
     border-radius: 5px;
     border: none;
-    background-color: var(--worn-out-blue);
-    box-shadow: inset 0px -4px 0px #414E73;
-    color:var(--white);
 
     @media (min-width: 1024px) {
         height: 64px;
@@ -181,9 +239,6 @@ $screen-size:1024px;
     width: 133px;
     border-radius: 5px;
     border: none;
-    background-color: var(--dark-orange);
-    box-shadow: inset 0px -4px 0px #93261A;
-    color:var(--white);
 
     @media (min-width: 1024px) {
         height: 64px;
